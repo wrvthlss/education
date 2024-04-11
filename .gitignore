@@ -1,0 +1,39 @@
+# Compiled binary extensions
+*.exe
+*.dll
+*.so
+*.dylib
+*.test
+
+# Output of the Go build
+/bin/
+/pkg/
+
+# Dependency directories (remove this line if you're using vendoring)
+/vendor/
+
+# Eclipse files
+.settings/
+.project
+.classpath
+
+# IntelliJ files
+.idea/
+*.iml
+*.iws
+
+# Visual Studio Code files
+.vscode/
+
+# Operating System generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Archies
+*.zip
+
