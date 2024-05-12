@@ -1,0 +1,5 @@
+ERROR: 2024/05/11 10:58:40 main.go:16: string error: extraction requires at least 5 characters: errorcode: 2
+ERROR: 2024/05/11 11:34:31 main.go:23: error in extraction: string error: extraction requires at least 5 characters: errorcode: 2
+ERROR: 2024/05/11 11:35:34 main.go:23: error in extraction: string error: string is empty: errorcode: 1
+ERROR: 2024/05/11 11:44:11 main.go:24: error in extraction: string error: string is empty: errorcode: 1
+ERROR: 2024/05/11 11:44:25 main.go:24: error in extraction: string error: extraction requires at least 5 characters: errorcode: 2
