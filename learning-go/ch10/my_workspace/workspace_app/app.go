@@ -6,6 +6,5 @@ import (
 )
 
 func main() {
-	res := fmt.Println(workspace_lib.AddNums(2, 3))
-	fmt.Printf(res)
+	fmt.Println(workspace_lib.AddNums(2, 3))
 }
