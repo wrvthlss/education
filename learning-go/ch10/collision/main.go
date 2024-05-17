@@ -7,5 +7,5 @@ import (
 
 func main() {
 	s := seed.Seed()
-	fmt.Println(s.Uint64())
+	fmt.Println(s)
 }
