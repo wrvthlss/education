@@ -1,0 +1,38 @@
+syntax = "proto3";
+package pbuffExample;
+
+import "google/protobuf/timestamp.proto";
+
+option go_package = "github.com/wrvthlss/education/learning-go/ch11/pbuffAddressBook";
+
+// The Person message contains the PhoneNumber message.
+message Person {
+  string name = 1;
+  int32 id = 2;  // Unique ID number for this person.
+  string email = 3;
+
+  message PhoneNumber {
+    string number = 1;
+    PhoneType type = 2;
+  }
+
+  repeated PhoneNumber phones = 4;
+
+  google.protobuf.Timestamp last_updated = 5;
+}
+
+// enum types for when you want one of your fields to have one of a predefined
+// list of values -- here you want to specify that a phone number can be one of
+// the following types.
+enum PhoneType {
+  PHONE_TYPE_UNSPECIFIED = 0;
+  PHONE_TYPE_MOBILE = 1;
+  PHONE_TYPE_HOME = 2;
+  PHONE_TYPE_WORK = 3;
+}
+
+// Our address book file is just one of these.
+// The AddressBook message contains Person messages.
+message AddressBook {
+  repeated Person people = 1;
+}
